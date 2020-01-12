@@ -11,8 +11,7 @@ public class BrowserTest {
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.google.ca");	
 		
-		System.out.println(driver.getTitle());
-		
+		System.out.println(driver.getTitle());		
 		driver.close();
 	}
 }
