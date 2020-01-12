@@ -12,6 +12,7 @@ public class BrowserTest {
 		driver.get("http://www.google.ca");	
 		
 		System.out.println(driver.getTitle());		
+		
 		driver.close();
 	}
 }
