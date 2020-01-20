@@ -9,6 +9,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Test99GuruLoginWithPageFactory {
 
 	//String driverPath = "C:\\geckodriver.exe";
@@ -19,8 +21,8 @@ public class Test99GuruLoginWithPageFactory {
 
 	@BeforeTest
 	public void setup() {
-
-		//System.setProperty("webdriver.gecko.driver", driverPath);
+		
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("http://demo.guru99.com/V4/");
