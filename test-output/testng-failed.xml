@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumTest">
+      <class name="guru99.demoBank.Test99GuruLogin">
         <methods>
-          <include name="WebDriverTest"/>
+          <include name="setup"/>
+          <include name="test_Home_Page_Appear_Correct"/>
         </methods>
-      </class> <!-- SeleniumTest -->
+      </class> <!-- guru99.demoBank.Test99GuruLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
