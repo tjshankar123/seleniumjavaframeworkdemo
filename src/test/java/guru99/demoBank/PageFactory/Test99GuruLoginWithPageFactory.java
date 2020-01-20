@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 public class Test99GuruLoginWithPageFactory {
 
-	String driverPath = "C:\\geckodriver.exe";
+	//String driverPath = "C:\\geckodriver.exe";
 
 	WebDriver driver;
 	Guru99Login objLogin;
