@@ -6,6 +6,7 @@ public class ExceptionHandlingDemo {
 		System.out.println("Hello World....");
 		
 		try {
+			@SuppressWarnings("unused")
 			int i = 1/0;
 		} 
 		catch (Exception e) {
