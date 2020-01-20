@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ExtentTestNGReportBuilder">
+      <class name="SeleniumTest">
         <methods>
-          <include name="test1"/>
-          <include name="teatDown"/>
-          <include name="setup"/>
+          <include name="WebDriverTest"/>
         </methods>
-      </class> <!-- ExtentTestNGReportBuilder -->
+      </class> <!-- SeleniumTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
