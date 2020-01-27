@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="guru99.demoBank.Test99GuruLogin">
+      <class name="guru99.demoBank.PageFactory.Test99GuruLoginWithPageFactory">
         <methods>
-          <include name="setup"/>
           <include name="test_Home_Page_Appear_Correct"/>
+          <include name="setup"/>
+          <include name="tearup"/>
         </methods>
-      </class> <!-- guru99.demoBank.Test99GuruLogin -->
+      </class> <!-- guru99.demoBank.PageFactory.Test99GuruLoginWithPageFactory -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

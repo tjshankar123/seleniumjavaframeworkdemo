@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14155" started-at="2020-01-19T22:57:03 EST" finished-at="2020-01-19T22:57:17 EST">
+  <suite name="Default suite" duration-ms="30928" started-at="2020-01-27T10:48:02 EST" finished-at="2020-01-27T10:48:33 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14155" started-at="2020-01-19T22:57:03 EST" finished-at="2020-01-19T22:57:17 EST">
+    <test name="Default test" duration-ms="30928" started-at="2020-01-27T10:48:02 EST" finished-at="2020-01-27T10:48:33 EST">
       <class name="guru99.demoBank.PageFactory.Test99GuruLoginWithPageFactory">
-        <test-method status="PASS" signature="setup()[pri:0, instance:guru99.demoBank.PageFactory.Test99GuruLoginWithPageFactory@1b68ddbd]" name="setup" is-config="true" duration-ms="11059" started-at="2020-01-19T22:57:03 EST" finished-at="2020-01-19T22:57:14 EST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:guru99.demoBank.PageFactory.Test99GuruLoginWithPageFactory@1f7030a6]" name="setup" is-config="true" duration-ms="13681" started-at="2020-01-27T10:48:02 EST" finished-at="2020-01-27T10:48:16 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="test_Home_Page_Appear_Correct()[pri:0, instance:guru99.demoBank.PageFactory.Test99GuruLoginWithPageFactory@1b68ddbd]" name="test_Home_Page_Appear_Correct" duration-ms="2100" started-at="2020-01-19T22:57:14 EST" finished-at="2020-01-19T22:57:16 EST">
+        <test-method status="PASS" signature="testNewCutomerPage()[pri:0, instance:guru99.demoBank.PageFactory.Test99GuruLoginWithPageFactory@1f7030a6]" name="testNewCutomerPage" duration-ms="2493" started-at="2020-01-27T10:48:16 EST" finished-at="2020-01-27T10:48:18 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNewCutomerPage -->
+        <test-method status="PASS" signature="tearup()[pri:0, instance:guru99.demoBank.PageFactory.Test99GuruLoginWithPageFactory@1f7030a6]" name="tearup" is-config="true" duration-ms="4134" started-at="2020-01-27T10:48:18 EST" finished-at="2020-01-27T10:48:22 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:guru99.demoBank.PageFactory.Test99GuruLoginWithPageFactory@1f7030a6]" name="setup" is-config="true" duration-ms="9023" started-at="2020-01-27T10:48:22 EST" finished-at="2020-01-27T10:48:31 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="test_Home_Page_Appear_Correct()[pri:0, instance:guru99.demoBank.PageFactory.Test99GuruLoginWithPageFactory@1f7030a6]" name="test_Home_Page_Appear_Correct" duration-ms="1317" started-at="2020-01-27T10:48:31 EST" finished-at="2020-01-27T10:48:33 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Home_Page_Appear_Correct -->
-        <test-method status="PASS" signature="tearup()[pri:0, instance:guru99.demoBank.PageFactory.Test99GuruLoginWithPageFactory@1b68ddbd]" name="tearup" is-config="true" duration-ms="946" started-at="2020-01-19T22:57:16 EST" finished-at="2020-01-19T22:57:17 EST">
+        <test-method status="PASS" signature="tearup()[pri:0, instance:guru99.demoBank.PageFactory.Test99GuruLoginWithPageFactory@1f7030a6]" name="tearup" is-config="true" duration-ms="194" started-at="2020-01-27T10:48:33 EST" finished-at="2020-01-27T10:48:33 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearup -->

@@ -9,8 +9,12 @@ public class Guru99HomePage {
 
 	WebDriver driver;
 
-	@FindBy(xpath = "//table//tr[@class='heading3']")
+	//@FindBy(xpath = "//table//tr[@class='heading3']")
+	@FindBy(xpath = "//td[contains(text(),'Manger Id')]")
 	WebElement homePageUserName;
+	
+	@FindBy(xpath = "//a[contains(text(),'New Customer')]") 
+	WebElement NewCustomerPageName;
 
 	public Guru99HomePage(WebDriver driver) {
 
@@ -22,6 +26,12 @@ public class Guru99HomePage {
 
 	// Get the User name from Home Page
 	public String getHomePageDashboardUserName() {
+		System.out.println("homePageUserName.getText() is :" + homePageUserName.getText());
 		return homePageUserName.getText();
 	}
+	
+	public void clickNewCustomerLink() {
+		NewCustomerPageName.click();
+	}
+
 }
