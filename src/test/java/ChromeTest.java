@@ -10,12 +10,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ChromeTest {
 
-	private WebDriver driver;
+	protected static WebDriver driver;
 
 	@BeforeClass
 	public static void setupClass() {
 		WebDriverManager.chromedriver().setup();
-		
 		//WebDriverManager.firefoxdriver().setup();
 		//WebDriverManager.edgeDriver().setup();
 	}

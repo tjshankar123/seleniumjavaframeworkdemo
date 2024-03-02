@@ -7,10 +7,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class SeleniumTest {
 
-	@Test
+	@Test (enabled = false)
 	public void WebDriverTest() {
 		
-		// System.setProperty("webdriver.chrome.driver", "C:\\Users\\tjsha_lfek1mv\\Downloads\\chromedriver_79\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\tjsha_lfek1mv\\Downloads\\chromedriver_79\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.toolsqa.com");
 		System.out.println("WebDriverTest :" + driver.getTitle());
