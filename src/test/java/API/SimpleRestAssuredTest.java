@@ -34,6 +34,7 @@ public class SimpleRestAssuredTest {
         driver.get(URL);
     }
 
+
     @AfterTest
     private void tearDown() {
         driver.quit();
