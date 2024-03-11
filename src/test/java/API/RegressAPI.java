@@ -88,7 +88,7 @@ public class RegressAPI {
         JSONObject requestParams = new JSONObject();
         requestParams.put("name","morpheus");
         requestParams.put("job","leader");
-        httpRequest.header("Content-Type", "application/json");;
+        httpRequest.header("Content-Type", "application/json");
         httpRequest.body(requestParams.toJSONString());
 
         Response response = httpRequest.post("/api/users");
@@ -108,7 +108,7 @@ public class RegressAPI {
         JSONObject requestParams = new JSONObject();
         requestParams.put("name","morpheus");
         requestParams.put("job","zion resident");
-        httpRequest.header("Content-Type", "application/json");;
+        httpRequest.header("Content-Type", "application/json");
         httpRequest.body(requestParams.toJSONString());
 
         Response response = httpRequest.put("/api/users/2");
@@ -127,12 +127,14 @@ public class RegressAPI {
         JSONObject requestParams = new JSONObject();
         requestParams.put("name","morpheus");
         requestParams.put("job","zion resident");
-        httpRequest.header("Content-Type", "application/json");;
+        httpRequest.header("Content-Type", "application/json");
         httpRequest.body(requestParams.toJSONString());
 
         Response response = httpRequest.patch("/api/users/2");
         ResponseBody body = response.getBody();
+
         System.out.println("The status received: " + response.statusLine());
+        System.out.println("body: " + body.prettyPrint());
 
         Assert.assertEquals(response.statusCode() /*actual value*/, 200 /*expected value*/,
                 "Correct status code returned");

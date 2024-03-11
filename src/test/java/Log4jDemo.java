@@ -5,8 +5,8 @@ import org.apache.logging.log4j.core.Logger;
 public class Log4jDemo {
 
 	private static Logger logger = (Logger) LogManager.getLogger(Log4jDemo.class);
-			
-	public static void main(String[] args) {
+
+	public static void main(String[] args)  {
 		
 		logger.setLevel(Level.TRACE);
 		

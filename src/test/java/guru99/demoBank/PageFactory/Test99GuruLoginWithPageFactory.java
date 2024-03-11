@@ -1,5 +1,6 @@
 package guru99.demoBank.PageFactory;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -30,7 +31,8 @@ public class Test99GuruLoginWithPageFactory {
 	public void setup() {		
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("http://demo.guru99.com/V4/");
 	}
 	
