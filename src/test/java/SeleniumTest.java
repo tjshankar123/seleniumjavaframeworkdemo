@@ -1,13 +1,10 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class SeleniumTest {
+public class   SeleniumTest {
 	static WebDriver driver;
 
 
@@ -28,10 +25,10 @@ public class SeleniumTest {
 		// It eliminate the problem of locally storing the driver binary.
 		
 		// Setup the chrome driver using WebDriverManager.
-		WebDriverManager.edgedriver().setup();
+		WebDriverManager.chromedriver().setup();
 		
 		// Create driver object for firefox browser.
-		driver = new EdgeDriver();
+		driver = new ChromeDriver();
 		driver.get("http://www.toolsqa.com");
 		System.out.println("WebDriverMangerTest :" + driver.getTitle());
 		driver.quit();

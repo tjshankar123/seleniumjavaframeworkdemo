@@ -15,16 +15,14 @@ public class ChromeTest {
 	@BeforeClass
 	public static void setupClass() {
 		WebDriverManager.chromedriver().setup();
-		//WebDriverManager.firefoxdriver().setup();
-		//WebDriverManager.edgeDriver().setup();
+		driver = new ChromeDriver();
+
 	}
 
 	@BeforeTest
 	public void setupTest() {
-		driver = new ChromeDriver();
-		
-		//driver = new FirefoxDriver();
-		//driver = new edgeDriver();
+//		driver = new ChromeDriver();
+
 	}
 
 	@AfterTest
