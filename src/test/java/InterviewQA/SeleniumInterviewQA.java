@@ -115,7 +115,6 @@ public class SeleniumInterviewQA {
         }
     }
 
-
     @Test
     public void CheckBox(){
         WebDriverManager.chromedriver().setup();
