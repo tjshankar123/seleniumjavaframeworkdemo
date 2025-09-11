@@ -1,6 +1,6 @@
 package interviewQA;
 
-public class BinarySearch {
+public class  BinarySearch {
     //Recursive method for binary search
     private static boolean binarySearch(int[] arr, int low, int high, int key){
 

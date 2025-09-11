@@ -41,5 +41,26 @@ public class Alerts {
         // Accepting alert
         alert.accept();
     }
+
+    @Test
+    public void alertDemo2() throws InterruptedException {
+        driver.get("https://demo.guru99.com/test/delete_customer.php");
+
+        // Enter customer ID and submit
+        driver.findElement(By.name("cusid")).sendKeys("53920");
+        driver.findElement(By.name("submit")).click();
+        Thread.sleep(5000);
+        // Switch to alert
+        Alert alert = driver.switchTo().alert();
+
+        // Get alert text
+        String alertMessage = alert.getText();
+        System.out.println("Alert message: " + alertMessage);
+     //   alert.accept(); // OK
+       alert.dismiss(); // Cancel
+
+        // Accept the alert
+    //    alert.dismiss();
+    }
 }
 

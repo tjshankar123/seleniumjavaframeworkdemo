@@ -1,7 +1,11 @@
 package StringBuilder;
 
 public class Demo {
-    // StringBuiler class provide alternative to String class and it is mutable.
+    // StringBuilder class provide alternative to String class and it is mutable.
+    // StringBuilder performance is faster than StringBuffer because of no overhead of synchronization.
+
+    // The main difference between StringBuffer and StringBuilder is that StringBuffer is thread-safe
+    // due to synchronization and this is slower.
 
     public static void main(String[] argv) throws Exception
     {

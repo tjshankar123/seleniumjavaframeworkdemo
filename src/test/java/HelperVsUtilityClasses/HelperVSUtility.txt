@@ -1,0 +1,3 @@
+- Use a utility class when you need global, stateless, static methods.
+
+- Use a helper class when you need reusable logic with state or instance methods.
