@@ -20,7 +20,6 @@ public class LoginPage {
     }
     private WebElement clickLogin(){
         return driver.findElement(By.id("login-button"));
-
     }
 
 
