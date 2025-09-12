@@ -22,8 +22,6 @@ public class LoginPage {
         return driver.findElement(By.id("login-button"));
     }
 
-
-
     public void login(String userName, String password){
         getUserNameField().sendKeys(userName);
         getPasswordField().sendKeys(password);
