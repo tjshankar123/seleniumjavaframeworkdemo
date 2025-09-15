@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class Login {
+    // Auther: TJ
 
     WebDriver driver;
     WebElement element;
